@@ -41,6 +41,7 @@
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
+    aspect-ratio: 1 / 1;
   }
   .about-containers {
     margin-top: 0;
@@ -90,9 +91,13 @@
     text-align: center;
   }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
+    width: 60vw;
+    height: 60vw;
+    max-width: 275px;
+    max-height: 275px;
+    margin: 0 auto 2rem;
     justify-content: center;
+    aspect-ratio: 1 / 1;
   }
   .section__text__p2 {
     font-size: 1.25rem;

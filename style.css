@@ -173,6 +173,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  aspect-ratio: 1 / 1;
 }
 
 #profile .section__pic-container img {
