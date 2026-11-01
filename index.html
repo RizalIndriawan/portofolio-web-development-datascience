@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rizal Indriawan - Web Developer & Data Science Portfolio. Explore my projects in web development, machine learning, and data analytics." />
+    <title>Rizal Indriawan | Web Developer & Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rizal Indriawan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rizal Indriawan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROFILE / HERO SECTION -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-hero.jpg" alt="Rizal Indriawan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rizal Indriawan</h1>
+        <p class="section__text__p2">Web Developer & Data Science</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV Rizal Indriawan.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/ig.png"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="window.open('https://www.instagram.com/rijal.ind/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/RizalIndriawan')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-about.jpg"
+            alt="Rizal Indriawan profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Internship at <br />Ministry of Human Rights</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Informatics<br />Universitas Nasional<br />GPA: 3.73/4.00</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Recent bachelor's degree graduate in Informatics from Universitas Nasional
+              with a strong foundation in Web Development, Artificial Intelligence, and
+              Machine Learning. Completed a 6-month internship at the Ministry of Human
+              Rights (KemenHAM), contributing to the development of web-based systems
+              using Django, React.js, and JavaScript. Developed independent full-stack
+              web development projects to strengthen practical skills including frontend
+              and backend development, RESTful APIs, database management, authentication,
+              and system integration. Certified in Software Development and as a BNSP
+              Junior Web Developer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- EXPERIENCE / SKILLS SECTION -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>HTML + CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>RESTful APIs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Science</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Django</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>NLP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Scikit-learn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Streamlit</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Analyst</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Microsoft Excel</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Data Visualization</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Pivot Tables</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="projects-grid">
+
+          <!-- Project 1: News Clustering -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1-news-clustering-1.png"
+                alt="News Clustering System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">News Clustering System</h2>
+            <div class="project-description-scrollable">
+              <p>Proyek pemodelan topik dan klasterisasi artikel berita seputar KEMENHAM menggunakan pendekatan Natural Language Processing untuk mengelompokkan berita ke dalam klaster berdasarkan kemiripan topik, membantu meringkas pola pemberitaan dalam jumlah artikel yang besar. Dibangun sebagai dashboard interaktif berbasis Django dengan fitur konfigurasi parameter clustering, evaluasi kualitas (Elbow Method, Silhouette Score, Similarity Matrix), visualisasi cluster, serta modul manual labeling untuk validasi hasil.</p>
+
+              <ul>
+                <li><strong>1.262</strong> Artikel Berita</li>
+                <li><strong>3</strong> Cluster Topik</li>
+                <li><strong>0.750</strong> Purity Score</li>
+              </ul>
+
+              <h4>Key Highlights:</h4>
+              <ul>
+                <li>Text preprocessing meliputi cleaning, tokenizing, dan stopword removal pada teks berita</li>
+                <li>Ekstraksi fitur teks menggunakan TF-IDF dan pengelompokan artikel dengan algoritma K-Means Clustering</li>
+                <li>Penentuan jumlah cluster optimal secara otomatis menggunakan Elbow Method dan Silhouette Analysis</li>
+                <li>Dashboard visualisasi interaktif (scatter plot PCA, similarity matrix, distribusi cluster) beserta modul manual labeling untuk validasi hasil</li>
+                <li>Lihat kode lengkap dan detail metodologi di repository GitHub</li>
+              </ul>
+            </div>
+            <div class="project-tools">
+              <span class="tool-tag">Python</span>
+              <span class="tool-tag">NLP</span>
+              <span class="tool-tag">Topic Modeling</span>
+              <span class="tool-tag">Clustering</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/RizalIndriawan/Pemodelan-Klasterisasi-Topik-Berita-KEMENHAM.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openGallery('News Clustering System', [
+                  './assets/project-1-news-clustering-1.png',
+                  './assets/project-1-news-clustering-2.png',
+                  './assets/project-1-news-clustering-3.png',
+                  './assets/project-1-news-clustering-4.png',
+                  './assets/project-1-news-clustering-5.png',
+                  './assets/project-1-news-clustering-6.png',
+                  './assets/project-1-news-clustering-7.png',
+                  './assets/project-1-news-clustering-8.png'
+                ])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2: Pizza Sales Dashboard -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2-pizza-sales.jpg"
+                alt="Pizza Sales Dashboard"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Pizza Sales Dashboard</h2>
+            <div class="project-description-scrollable">
+              <p>Dashboard performa penjualan pizza untuk melacak tren pesanan bulanan, kategori produk terlaris, dan kontribusi pendapatan per ukuran dan kategori pizza, digunakan untuk mendukung keputusan operasional dan menu.</p>
+
+
+              <h4>KPIs & Metrics:</h4>
+              <ul>
+                <li><strong>$817.860</strong> Total Pendapatan</li>
+                <li><strong>21.350</strong> Total Pesanan</li>
+                <li><strong>$38,31</strong> Rata-rata Nilai Pesanan</li>
+              </ul>
+
+              <h4>Key Highlights:</h4>
+              <ul>
+                <li>Kategori Classic menyumbang 30% dari total pesanan, kategori dengan kontribusi tertinggi</li>
+                <li>The Classic Deluxe Pizza menjadi menu dengan jumlah pesanan terbanyak (2.453 pesanan)</li>
+                <li>Tren penjualan bulanan menunjukkan puncak pesanan pada bulan Juli</li>
+                <li>Breakdown pendapatan per ukuran (S/M/L/XL/XXL) untuk tiap kategori pizza</li>
+              </ul>
+            </div>
+            <div class="project-tools">
+              <span class="tool-tag">Microsoft Excel</span>
+              <span class="tool-tag">Power Query</span>
+              <span class="tool-tag">Dashboard Design</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/RizalIndriawan/Pizza-Sales-Performance.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openGallery('Pizza Sales Dashboard', [
+                  './assets/project-2-pizza-sales.jpg'
+                ])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3: Kopi Tuku Campaign Dashboard -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3-kopi-tuku.jpg"
+                alt="Kopi Tuku Campaign Dashboard"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Kopi Tuku Campaign Dashboard</h2>
+            <div class="project-description-scrollable">
+              <p>Analisis performa campaign marketing Kopi Tuku sepanjang Januari–Desember 2025, mencakup proses data cleaning, exploratory data analysis, perhitungan KPI bisnis, hingga pembuatan dashboard interaktif untuk mengevaluasi efektivitas channel marketing dan ROAS.</p>
+
+
+              <h4>KPIs & Metrics:</h4>
+              <ul>
+                <li><strong>Rp184,3 Jt</strong> Net Revenue</li>
+                <li><strong>3.868</strong> Total Transaksi</li>
+                <li><strong>55,11%</strong> Profit Margin</li>
+                <li><strong>0,35</strong> ROAS</li>
+              </ul>
+
+              <h4>Key Highlights:</h4>
+              <ul>
+                <li>Membersihkan 6.100 baris data mentah (duplikat, record tidak valid, missing values) menjadi 4.064 baris data siap analisis</li>
+                <li>Menghitung metrik turunan seperti Net Revenue, ROAS, CTR, Conversion Rate, dan AOV</li>
+                <li>Returning Customer menyumbang 44,4% dari total revenue, menunjukkan loyalitas pelanggan yang kuat</li>
+                <li>Facebook menghasilkan profit tertinggi, sementara Instagram dan kanal Offline lebih efisien dari sisi ROAS</li>
+              </ul>
+            </div>
+            <div class="project-tools">
+              <span class="tool-tag">Python (Pandas)</span>
+              <span class="tool-tag">Excel</span>
+              <span class="tool-tag">Google Looker Studio</span>
+              <span class="tool-tag">Data Cleaning</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/RizalIndriawan/kopi-tuku-campaign-performance.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openGallery('Kopi Tuku Campaign Dashboard', [
+                  './assets/project-3-kopi-tuku.jpg'
+                ])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 4: E-Commerce Sales Dashboard -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4-sales-performance.jpg"
+                alt="E-Commerce Sales Dashboard"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">E-Commerce Sales Dashboard</h2>
+            <div class="project-description-scrollable">
+              <p>Dashboard business intelligence interaktif untuk menganalisis performa penjualan, profitabilitas, segmen pelanggan, produk, dan performa regional sebuah e-commerce sepanjang periode Januari–Desember 2025. Data disiapkan dan dibersihkan di Excel, kemudian divisualisasikan secara interaktif di Google Looker Studio.</p>
+
+
+              <h4>KPIs & Metrics:</h4>
+              <ul>
+                <li><strong>82,9 M</strong> Total Revenue</li>
+                <li><strong>23,6 M</strong> Total Profit</li>
+                <li><strong>28,5%</strong> Profit Margin</li>
+                <li><strong>1,1 rb</strong> Total Customer</li>
+              </ul>
+
+              <h4>Key Highlights:</h4>
+              <ul>
+                <li>Melacak 6 KPI utama: total revenue, profit, order, customer, average order value, dan profit margin</li>
+                <li>Filter interaktif berdasarkan region, provinsi, kategori, sub kategori, produk, dan tingkat loyalitas</li>
+                <li>Segmen Consumer menyumbang 48,4% dari total pendapatan, jadi kontributor terbesar</li>
+                <li>Jawa Barat mencatat penjualan tertinggi dibanding provinsi lain</li>
+              </ul>
+            </div>
+            <div class="project-tools">
+              <span class="tool-tag">Microsoft Excel</span>
+              <span class="tool-tag">Google Looker Studio</span>
+              <span class="tool-tag">Data Cleaning</span>
+              <span class="tool-tag">KPI Development</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/RizalIndriawan/Salas-Perfomance.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openGallery('E-Commerce Sales Dashboard', [
+                  './assets/project-4-sales-performance.jpg'
+                ])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 5: Employee Leave Management -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-5-leave-management.jpg"
+                alt="Employee Leave Management System"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Employee Leave Management</h2>
+            <div class="project-description-scrollable">
+              <h4>Problem:</h4>
+              <p>Banyak perusahaan berskala menengah masih mengandalkan cara manual (kertas, email, atau spreadsheet) untuk melacak sisa cuti dan proses persetujuan cuti karyawan. Hal ini sering menimbulkan masalah seperti:</p>
+              <ul>
+                <li>Kesalahan Data: Perhitungan sisa cuti yang tidak akurat.</li>
+                <li>Bentrok Jadwal: Karyawan sering mengajukan cuti di tanggal yang saling tumpang tindih.</li>
+                <li>Birokrasi Lambat: Proses persetujuan memakan waktu lama karena kurangnya pelacakan real-time.</li>
+              </ul>
+
+              <h4>Action & Result:</h4>
+              <p>Untuk menyelesaikan masalah tersebut, saya merancang dan membangun sistem manajemen cuti berbasis web yang terotomatisasi secara end-to-end.</p>
+
+              <ul>
+                <li><strong>100%</strong> Zero-Error Tracking</li>
+                <li><strong>3</strong> Tingkat Akses (RBAC)</li>
+              </ul>
+
+              <h4>Key Highlights:</h4>
+              <ul>
+                <li><strong>Architecture & Database:</strong> Merancang skema database relasional di PostgreSQL menggunakan UUID, relasi Foreign Key yang ketat, dan mekanisme auto-provisioning untuk saldo cuti.</li>
+                <li><strong>Role-Based Access Control (RBAC):</strong> Mengimplementasikan sistem otentikasi JWT dengan 3 tingkat otorisasi yang berbeda (Employee, Manager, HR).</li>
+                <li><strong>Business Logic Protection:</strong> Memprogram validasi di sisi backend (Express.js) untuk memblokir pengajuan cuti yang tanggalnya tumpang tindih serta mencegah saldo cuti bernilai minus.</li>
+                <li><strong>Premium UI/UX Design:</strong> Mengembangkan antarmuka responsif menggunakan React dan Tailwind CSS dengan prinsip desain korporat modern (Glassmorphism, palet warna elegan, dan transisi animasi mulus).</li>
+                <li><strong>Zero-Error Tracking:</strong> Sistem berhasil memastikan penghitungan hari cuti 100% akurat karena dikalkulasi secara otomatis oleh server.</li>
+                <li><strong>Efisiensi Manajerial:</strong> Mengurangi waktu pemrosesan persetujuan cuti secara drastis melalui Manager Dashboard.</li>
+                <li><strong>Struktur Kode Skalabel:</strong> Aplikasi dapat dikembangkan lebih lanjut tanpa error berarti berkat penggunaan pola arsitektur RESTful API dan Type-Safety dari TypeScript.</li>
+              </ul>
+            </div>
+            <div class="project-tools">
+              <span class="tool-tag">React (Vite)</span>
+              <span class="tool-tag">TypeScript</span>
+              <span class="tool-tag">Tailwind CSS</span>
+              <span class="tool-tag">Node.js</span>
+              <span class="tool-tag">Express.js</span>
+              <span class="tool-tag">PostgreSQL</span>
+              <span class="tool-tag">PERN Stack</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/RizalIndriawan/employee_leave.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openGallery('Employee Leave Management', [
+                  './assets/project-5-leave-management.jpg',
+                  './assets/project-5-leave-management-1.jpg',
+                  './assets/project-5-leave-management-2.jpg',
+                  './assets/project-5-leave-management-3.jpg',
+                  './assets/project-5-leave-management-4.jpg',
+                  './assets/project-5-leave-management-5.jpg',
+                  './assets/project-5-leave-management-6.jpg'
+                ])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 6: Customer Churn Intelligence -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-6-Customer Retention-1.png"
+                alt="Customer Churn Intelligence Platform"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Customer Churn Intelligence</h2>
+            <div class="project-description-scrollable">
+              <h4>Problem:</h4>
+              <p>Bayangkan Anda menjalankan bisnis SaaS — setiap bulan ada pelanggan yang diam-diam pergi tanpa pernah bilang kenapa. Tim Customer Success baru sadar ketika pelanggan sudah cancel. Padahal, mencari pelanggan baru itu 5-7x lebih mahal dibanding mempertahankan yang sudah ada. Masalahnya sederhana: tidak ada cara untuk tahu siapa yang akan pergi sebelum mereka benar-benar pergi.</p>
+
+              <h4>Action & Result:</h4>
+              <p>Untuk menjawab tantangan ini, saya membangun sebuah platform Machine Learning dari nol — bukan sekadar model di Jupyter Notebook, tapi sistem yang siap digunakan di dunia nyata. Platform ini bisa memprediksi peluang churn setiap pelanggan secara real-time, mengelompokkan mereka ke level risiko (HIGH / MEDIUM / LOW), lalu memberikan rekomendasi aksi yang spesifik — misalnya "hubungi pelanggan ini untuk review pembayaran" atau "tawarkan upgrade plan". Seluruh sistemnya saya rancang end-to-end: mulai dari pipeline data (5 sumber CSV → cleaning → 22 fitur baru), model XGBoost yang sudah di-tuning, REST API via FastAPI, dashboard Streamlit untuk tim non-teknis, database logging untuk audit trail, hingga Docker untuk deployment.</p>
+
+
+              <ul>
+                <li><strong>0.8553</strong> ROC-AUC Score</li>
+                <li><strong>92.77%</strong> Recall (Churn)</li>
+                <li><strong>22</strong> Engineered Features</li>
+                <li><strong>5</strong> Data Sources</li>
+              </ul>
+
+              <h4>Key Highlights:</h4>
+              <ul>
+                <li><strong>Pipeline ML dari Hulu ke Hilir:</strong> Saya membangun seluruh alur kerja — dari membuat data sintetis, membersihkannya (duplikat, umur negatif, typo), menggabungkan 5 tabel menjadi satu dataset analitis, merekayasa 22 fitur baru, melatih model XGBoost dengan hyperparameter tuning, hingga menyajikannya lewat REST API.</li>
+                <li><strong>Mendeteksi "Kebocoran Data" yang Berbahaya:</strong> Awalnya model saya mencapai akurasi 99.9% — terlalu sempurna untuk dipercaya. Setelah saya investigasi, ternyata ada 2 fitur yang "menyontek" jawaban (target leakage). Saya hapus keduanya, dan hasilnya turun ke 0.855 — angka yang jauh lebih jujur dan bisa diandalkan.</li>
+                <li><strong>Memilih Threshold yang Masuk Akal Secara Bisnis:</strong> Saya sengaja menggunakan threshold 0.40 (bukan default 0.50). Alasannya? Dalam konteks churn, lebih baik salah menandai pelanggan sehat sebagai berisiko — kita cukup telepon mereka untuk check-in — daripada melewatkan pelanggan yang benar-benar akan pergi.</li>
+                <li><strong>API yang Siap Produksi:</strong> FastAPI dengan 4 endpoint utama, Swagger docs otomatis, feature engineering langsung di server (bukan di client), dan desain yang tetap jalan meskipun database logging gagal — prediksi tetap dikembalikan ke user.</li>
+                <li><strong>Rekomendasi Aksi yang Bisa Langsung Dieksekusi:</strong> Platform tidak hanya bilang "pelanggan ini berisiko tinggi", tapi juga memberikan saran konkret: apakah perlu review pembayaran, sesi onboarding ulang, assign dedicated support, atau tawarkan diskon kontrak tahunan.</li>
+                <li><strong>Dashboard untuk Tim Non-Teknis:</strong> Streamlit dashboard yang intuitif — tim Customer Success cukup isi form profil pelanggan, klik tombol, dan langsung lihat hasilnya dengan indikator warna hijau/kuning/merah beserta rekomendasi aksinya.</li>
+                <li><strong>Siap Deploy dengan Docker:</strong> Seluruh sistem dikemas dalam Docker Compose — API dan PostgreSQL berjalan di container terpisah dengan health check dan persistent volume, tinggal <code>docker compose up</code> dan selesai.</li>
+                <li><strong>Teruji dengan Automated Testing:</strong> Saya menulis test suite menggunakan Pytest yang mencakup seluruh lapisan — dari data cleaning, validasi bisnis, training model, hingga API endpoints — untuk memastikan tidak ada yang rusak saat dikembangkan lebih lanjut.</li>
+              </ul>
+            </div>
+            <div class="project-tools">
+              <span class="tool-tag">Python 3.12</span>
+              <span class="tool-tag">Pandas</span>
+              <span class="tool-tag">Scikit-Learn</span>
+              <span class="tool-tag">XGBoost</span>
+              <span class="tool-tag">FastAPI</span>
+              <span class="tool-tag">Streamlit</span>
+              <span class="tool-tag">PostgreSQL</span>
+              <span class="tool-tag">SQLAlchemy</span>
+              <span class="tool-tag">Docker</span>
+              <span class="tool-tag">Pytest</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/RizalIndriawan/CUSTOMER-RETENTION-CHURN-INTELLIGENCE-PLATFORM.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openGallery('Customer Churn Intelligence', [
+                  './assets/project-6-Customer Retention-1.png',
+                  './assets/project-6-Customer Retention-2.png',
+                  './assets/project-6-Customer Retention-3.png',
+                  './assets/project-6-Customer Retention-4.png',
+                  './assets/project-6-Customer Retention-5.png',
+                  './assets/project-6-Customer Retention-6.png',
+                  './assets/project-6-Customer Retention-7.png',
+                  './assets/project-6-Customer Retention-8.png',
+                  './assets/project-6-Customer Retention-9.png',
+                  './assets/project-6-Customer Retention-10.png',
+                  './assets/project-6-Customer Retention-11.png',
+                  './assets/project-6-Customer Retention-12.png',
+                  './assets/project-6-Customer Retention-13.png',
+                  './assets/project-6-Customer Retention-14.png',
+                  './assets/project-6-Customer Retention-15.png',
+                  './assets/project-6-Customer Retention-16.png',
+                  './assets/project-6-Customer Retention-17.png',
+                  './assets/project-6-Customer Retention-18.png',
+                  './assets/project-6-Customer Retention-19.png',
+                  './assets/project-6-Customer Retention-20.png',
+                  './assets/project-6-Customer Retention-21.png'
+                ])"
+              >
+                Detail
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- GALLERY MODAL -->
+    <div id="gallery-modal" class="gallery-modal">
+      <div class="gallery-modal-content">
+        <div class="gallery-header">
+          <h2 id="gallery-title"></h2>
+          <span class="gallery-close" onclick="closeGallery()">&times;</span>
+        </div>
+        <div class="gallery-main">
+          <button class="gallery-nav gallery-prev" onclick="prevImage()">&#10094;</button>
+          <img id="gallery-main-img" src="" alt="Project screenshot" />
+          <button class="gallery-nav gallery-next" onclick="nextImage()">&#10095;</button>
+        </div>
+        <p class="gallery-counter"><span id="gallery-current">1</span> / <span id="gallery-total">1</span></p>
+        <div id="gallery-thumbnails" class="gallery-thumbnails"></div>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jallidr96@gmail.com">jallidr96@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/ig.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/rijal.ind/">@rijal.ind</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Github icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/RizalIndriawan">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Rizal Indriawan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
